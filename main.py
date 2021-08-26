@@ -15,7 +15,7 @@ def main():
     response = requests.get(url)
     info = response.json()
     
-    output = f"""*🥳🥳A new visiter arrived on the website!!🥳🥳*
+    output = f"""*📣A new visiter arrived on the website!*
 *Timestamp :* `{datetime.now()}`
 *IP Address : {info['query']}*
 *Details : *
